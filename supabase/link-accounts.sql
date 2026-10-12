@@ -3,7 +3,7 @@
 -- Passwords are set in Authentication only; do not put them in this script.
 begin;
 do $$
-declare emma_email text:='REPLACE_WITH_EMMA_EMAIL'; joey_email text:='REPLACE_WITH_JOEY_EMAIL'; emma_id uuid; joey_id uuid;
+declare emma_email text:='ooo56123@gmail.com'; joey_email text:='l1kefv@outlook.com'; emma_id uuid; joey_id uuid;
 begin
   select id into emma_id from auth.users where lower(email)=lower(emma_email);
   select id into joey_id from auth.users where lower(email)=lower(joey_email);
